@@ -10,6 +10,7 @@ ignore = {
 	"611", -- line contains only whitespace
 	"614", -- trailing whitespace in a comment
 	"612", -- line contains trailing whitespace
+	"512", -- loop is executed at most once
 
 	"11./SLASH_.*", -- Setting an undefined (Slash handler) global variable
 	"11./BINDING_.*", -- Setting an undefined (Keybinding header) global variable
@@ -19409,3 +19410,4 @@ globals = {
 	"AUCTION_CATEGORY_REAGENT",
 	"AUCTION_CATEGORY_PROJECTILE",
 	"AUCTION_CATEGORY_QUIVER",
+}
