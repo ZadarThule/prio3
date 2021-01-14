@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - master
-      - Prio3-Workflow
     tags:
       - "*"
   pull_request:
