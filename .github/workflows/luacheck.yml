@@ -1,3 +1,5 @@
+name: luacheck
+
 on:
   workflow_dispatch:
       inputs:
