@@ -1,0 +1,27 @@
+on:
+  workflow_dispatch:
+      inputs:
+      logLevel:
+        description: 'Log level'     
+        required: true
+        default: 'warning'
+      tags:
+        description: 'Manual luacheck build test'  
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    #env:
+      #CF_API_KEY: ${{ secrets.CF_API_KEY }}
+      #GITHUB_OAUTH: ${{ secrets.GITHUB_TOKEN }}
+
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 10
+
+      - name: Install and run Luacheck
+        uses: nebularg/actions-luacheck@v1
+        with:
+          args: "--no-color -q"
