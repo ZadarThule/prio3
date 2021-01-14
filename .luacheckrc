@@ -3,12 +3,14 @@ max_line_length = false
 exclude_files = {
 	"README.md",
 	".luacheckrc",
-	"libs/",
+	"libs/"
 }
+
 ignore = {
 	"611", -- line contains only whitespace
 	"614", -- trailing whitespace in a comment
 	"612", -- line contains trailing whitespace
+
 	"11./SLASH_.*", -- Setting an undefined (Slash handler) global variable
 	"11./BINDING_.*", -- Setting an undefined (Keybinding header) global variable
 	"113/LE_.*", -- Accessing an undefined (Lua ENUM type) global variable
@@ -29,6 +31,7 @@ globals = {
 
   -- Prio3
   "Prio3",
+  "tempty",
   "tprint",
 
   -- other WoW APIs
@@ -19406,4 +19409,3 @@ globals = {
 	"AUCTION_CATEGORY_REAGENT",
 	"AUCTION_CATEGORY_PROJECTILE",
 	"AUCTION_CATEGORY_QUIVER",
-}
